@@ -281,7 +281,7 @@ is attached; the possible attachment object types are :at:`joint`, :at:`tendon`,
 
    :at:`site` transmission (without a :at:`refsite`, see below) and :at:`body` transmission targets have a fixed zero
    length :math:`l_i(q) = 0`. They can therefore not be used to maintain a desired length, but can be used to apply
-   forces. Site transmissions correspond to applying a Cartsian force/torque at the site, and are useful for modeling
+   forces. Site transmissions correspond to applying a Cartesian force/torque at the site, and are useful for modeling
    jets and propellors. :el:`body` transmissions correspond to applying forces at contact points belonging to a body, in
    order to model vacuum grippers and biomechanical adhesive appendages. For more information about adhesion, see the
    :ref:`adhesion<adhesion>` actuator documentation.
@@ -1542,7 +1542,7 @@ The top-level function :ref:`mj_inverse` invokes the following sequence of compu
 Derivatives
 -----------
 
-MuJoCo's entire computational pipline and uniquely -- its constraint solver -- are analytically differentiable. Writing
+MuJoCo's entire computational pipeline and uniquely -- its constraint solver -- are analytically differentiable. Writing
 efficient implementations of these derivatives is a long term goal of the development team. Analytic derivatives of the
 smooth dynamics with respect to velocity are already in place and power the :ref:`implicit integrator<geIntegration>`.
 
